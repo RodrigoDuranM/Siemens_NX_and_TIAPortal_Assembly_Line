@@ -8,6 +8,11 @@ The system automates the lifecycle of a bottle—from initial filling and cappin
 
 ---
 
+
+https://github.com/user-attachments/assets/ccd8905e-a6a6-4d93-acb2-e09ce5c52804
+
+
+
 ## 🛠️ Technology Stack
 * **PLC Programming:** TIA Portal (S7-1500 Logic)
 * **Virtual Commissioning:** Siemens NX MCD
@@ -30,13 +35,10 @@ The system automates the lifecycle of a bottle—from initial filling and cappin
 ---
 
 ## 🧠 Control Philosophy: Modular Finite State Machines (FSM)
-The core of this program is architected using **three distinct Finite State Machines**. 
+The core of this program is architected using **three distinct Finite State Machines**.
 
-> **Engineering Insight:** A modular FSM approach was chosen over a single linear sequence to maximize throughput. 
 * **Concurrency:** By separating Filling, Capping, and Sorting logic, the system processes multiple bottles simultaneously at different stages.
 * **Efficiency:** Instead of tracking a single bottle from start to finish, the PLC manages "zones," allowing the line to run continuously without waiting for a single cycle to complete.
-
-
 
 ---
 
@@ -49,8 +51,8 @@ Despite the modularity, the system is unified through a global control layer:
 ---
 
 ## 📂 Project Structure
-* `/PLC_Program`: TIA Portal project archives (.zap) and SCL source code.
-* `/NX_Model`: Siemens NX .prt files and MCD physics configurations.
+* `/PLC_Program`: TIA Portal project (.zap)
+* `/NX_Model`: Siemens NX .prt files, divided into Station 1, Station 2, and COMPLETE (assembly)
 * `/Documentation`: I/O mapping, state diagrams, and PDF exports of the logic.
 * `/Media`: Screen recordings and screenshots of the simulation in action.
 
