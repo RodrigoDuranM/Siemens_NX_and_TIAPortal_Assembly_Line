@@ -16,6 +16,7 @@ https://youtu.be/aL4MK4sE2Zc
 
 https://github.com/user-attachments/assets/ccd8905e-a6a6-4d93-acb2-e09ce5c52804
 
+---
 
 ## 🛠️ Software and Tools
 * **PLC Programming:** TIA Portal (S7-1500 Logic)
