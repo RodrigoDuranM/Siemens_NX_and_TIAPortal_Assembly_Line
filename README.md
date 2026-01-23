@@ -8,9 +8,14 @@ The production line handles bottles of **different sizes (tall and short)** and 
 
 ---
 
+## 🎥 System Demonstration
+
+[![Digital Twin Bottling Assembly Line](https://img.youtube.com/vi/aL4MK4sE2Zc/0.jpg)](https://youtu.be/aL4MK4sE2Zc)
+
+▶️ *Click the image to watch the full simulation of the bottling assembly line, including filling, capping, sorting, and packing operations.*
+
 
 https://github.com/user-attachments/assets/ccd8905e-a6a6-4d93-acb2-e09ce5c52804
-
 
 
 ## 🛠️ Software and Tools
@@ -69,7 +74,6 @@ Despite the modularity, the system is unified through a global control layer:
 ## 📂 Project Structure
 * `/PLC_Program`: TIA Portal project (.zap)
 * `/NX_Model`: Siemens NX .prt files, divided into Station 1, Station 2, and COMPLETE (assembly)
-* `/Documentation`: I/O mapping, state diagrams, and PDF exports of the logic.
-* `/Media`: Screen recordings and screenshots of the simulation in action.
+* `/Videos`: MP4 version of video demo.
 
 ---
