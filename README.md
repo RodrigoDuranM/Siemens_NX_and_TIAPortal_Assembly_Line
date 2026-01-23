@@ -1,10 +1,10 @@
-# Digital Twin: Automated Bottling & Sorting Line
+# Digital Twin and Virtual Commisioning: Automated Bottling & Sorting Line
 **Integrated Control System using Siemens TIA Portal, NX MCD, and PLCSIM**
 
 ## 🚀 Project Overview
-This project is a high-fidelity "Digital Twin" of a streamlined factory bottling line. It features a complete synchronization between a 3D physics-based simulation in **Siemens NX Mechatronics Concept Designer (MCD)** and industrial control logic running in **TIA Portal**.
+This project presents a **two-station bottling assembly line** developed as part of a *Flexible Production Systems* course. It features a complete synchronization between a 3D physics-based simulation in **Siemens NX Mechatronics Concept Designer (MCD)** and industrial control logic running in **TIA Portal**.
 
-The system automates the lifecycle of a bottle—from initial filling and capping to intelligent sorting via robotic arms based on package dimensions.
+The production line handles bottles of **different sizes (tall and short)** and performs filling, capping, sorting, and packing operations using conveyors and ABB industrial robots.
 
 ---
 
@@ -13,24 +13,40 @@ https://github.com/user-attachments/assets/ccd8905e-a6a6-4d93-acb2-e09ce5c52804
 
 
 
-## 🛠️ Technology Stack
+## 🛠️ Software and Tools
 * **PLC Programming:** TIA Portal (S7-1500 Logic)
 * **Virtual Commissioning:** Siemens NX MCD
 * **Simulation & Testing:** S7-PLCSIM / PLCSIM Advanced
-* **HMI:** Integrated control interface for Start/Stop/Reset and real-time monitoring.
 
 ---
 
 ## 🏗️ System Architecture & Stations
 
 ### Station 1: Filling & Capping
-* **Process:** Bottles are introduced via HMI trigger, conveyed to a filling valve, and held using precise timing logic.
-* **Robotic Integration:** An **ABB Robot 1** handles the capping sequence once the bottle enters its workspace, ensuring the mechanical assembly is ready for the sorting stage.
+- **L-shaped conveyor**
+- Bottles are introduced from an external source
+- Process flow:
+  1. Bottle enters the conveyor
+  2. Stops at the **filling valve** for a fixed time to simulate filling
+  3. Moves toward the **capping robot**
+
+- **Capping Robot**
+  - ABB **IRB 920T**
+  - Sensors detect bottle height (tall or short)
+  - Robot performs the appropriate capping motion based on bottle size
 
 ### Station 2: Sorting & Packing
-* **Process:** Intelligent sorting based on bottle dimensions.
-* **Vision/Sensing:** **ABB Robot 2** identifies the bottle size and, directed by the PLC, diverts it to the correct secondary conveyor.
-* **End-of-Line:** Bottles are routed to specific packing crates, completing the production cycle.
+- **T-shaped conveyor layout** with three belts
+- Process flow:
+  1. Bottle moves along the main belt
+  2. Stops at the **sorting robot**
+
+- **Sorting Robot**
+  - ABB **IRB 920T**
+  - Sensors detect bottle size
+  - Robot places bottles onto the corresponding belt based on size
+
+- Bottles are finally transported to **packing boxes**
 
 ---
 
