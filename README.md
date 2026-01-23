@@ -10,9 +10,8 @@ The production line handles bottles of **different sizes (tall and short)** and 
 
 ## 🎥 System Demonstration
 
-[![Digital Twin Bottling Assembly Line](https://img.youtube.com/vi/aL4MK4sE2Zc/0.jpg)](https://youtu.be/aL4MK4sE2Zc)
-
-▶️ *Click the image to watch the full simulation of the bottling assembly line, including filling, capping, sorting, and packing operations.*
+A full simulation of the bottling assembly line, including filling, capping, sorting, packing, and HMI components is available here:  
+https://youtu.be/aL4MK4sE2Zc
 
 
 https://github.com/user-attachments/assets/ccd8905e-a6a6-4d93-acb2-e09ce5c52804
