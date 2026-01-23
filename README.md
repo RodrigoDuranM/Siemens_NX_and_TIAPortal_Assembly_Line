@@ -72,8 +72,8 @@ Despite the modularity, the system is unified through a global control layer:
 ---
 
 ## 📂 Project Structure
-* `/PLC_Program`: TIA Portal project (.zap)
-* `/NX_Model`: Siemens NX .prt files, divided into Station 1, Station 2, and COMPLETE (assembly)
+* `/TIA Portal`: TIA Portal project (.zap)
+* `/NX Simulation`: Siemens NX .prt files, divided into Station 1, Station 2, and COMPLETE (assembly)
 * `/Videos`: MP4 version of video demo.
 
 ---
